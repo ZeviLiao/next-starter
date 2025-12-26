@@ -2,15 +2,22 @@ Step-by-step guide to set up a production-ready Next.js project for 2025. Every
 step is optional and can be skipped if not needed or swapped for a different 
 tool depending on the project requirements.
 
-Selected tools:
-- Next.js with TypeScript, using App Router
-- Tailwind CSS for styling
-- Biome for linting and formatting
-- Husky and lint-staged for pre-commit hooks
-- GitHub Actions for CI
-- Vitest and React Testing Library for unit and integration tests
-- Playwright for E2E tests
-- Storybook for component development and documentation
+## Tech Stack
+
+- **Next.js 16.1** with TypeScript, using App Router
+- **Tailwind CSS 3.4** for styling (v4 not compatible with Turbopack)
+- **shadcn/ui** for component library
+- **Biome 2.3** for linting and formatting
+- **Husky** and **lint-staged** for pre-commit hooks
+- **GitHub Actions** for CI
+- **Vitest** and **React Testing Library** for unit and integration tests
+- **Playwright** for E2E tests
+- **Storybook** for component development and documentation
+
+## Known Issues
+
+### Tailwind CSS v4 Compatibility
+Tailwind CSS v4 is currently **not compatible with Next.js 16 + Turbopack**. This project uses **Tailwind CSS v3.4** instead. When Tailwind v4 support improves, consider upgrading.
 
 ## (1) Next.js init
 
